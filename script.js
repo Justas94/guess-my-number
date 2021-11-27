@@ -23,12 +23,17 @@ document.querySelector(".check").addEventListener("click", function () {
   // When there is no input
   if (!guess) {
     document.querySelector(".message").textContent = "⛔️ No number! Try Again";
+<<<<<<< HEAD
 
     // When player wins
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "🎉 Correct Number!";
 
     // When guess is too high
+=======
+  } else if (guess === secretNumber) {
+    document.querySelector(".message").textContent = "🎉 Correct Number!";
+>>>>>>> af25f047715f36591dfa42e563d24bdf637bbd55
   } else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent = "📈 Too High! Try Again";
@@ -38,7 +43,10 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent = "😕 You lost the game!";
       document.querySelector(".score").textContent = 0;
     }
+<<<<<<< HEAD
     // When guess is too low
+=======
+>>>>>>> af25f047715f36591dfa42e563d24bdf637bbd55
   } else if (guess < secretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent = "📉 Too Low! Try Again";
